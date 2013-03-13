@@ -1,0 +1,55 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.thumbnail {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+.bottom-right{
+	position: absolute; 
+	right: 0px; 
+	bottom: 0px
+}
+
+.btn-large {
+    border-radius: 5px 5px 5px 5px;
+    font-size: 20px;
+    line-height: normal;
+    padding: 9px 14px;
+}
+
+.js-only {
+	display: none;
+}
+
+.alert-simple {
+	margin-top: 20px; 
+	border: none; 
+	background: none;
+}
+
+#multifile_list li{
+	list-style: none;
+}
+
+select {
+	width: auto;
+	margin: 2px;
+}
+
+.margin-4 {
+	margin: 4px;
+}
+
+body {
+	padding-top: 0px;
+}
+
+.thumbnail > img {
+	max-height:200px;
+}

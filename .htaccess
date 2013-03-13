@@ -1,0 +1,26 @@
+#  .htaccess
+#
+#  part of phpMMVC 1.5 by Eric Newport aka Kethinov - http://eric.halo43.com
+#
+#  licensed under the Creative Commons Attribution 3.0 United States License.
+#  You are permitted to redistribute and/or modify this work for commercial or
+#  noncommercial purposes provided proper attribution to the original author (me)
+#  is present in the redistribution.
+
+
+<Files cron.php>
+  order allow,deny
+  deny from all
+</Files>
+<Files db.sqlite>
+  order allow,deny
+  deny from all
+</Files>
+
+Options None
+Options +FollowSymLinks
+DirectoryIndex controller.php
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ controller.php?$1 [QSA,L]

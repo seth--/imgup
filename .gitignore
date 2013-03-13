@@ -1,0 +1,4 @@
+db.sqlite
+uploads/*
+!uploads/.htaccess
+todo.txt
