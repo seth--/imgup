@@ -23,7 +23,7 @@ try {
 
 
 function delete_image($id, $dbh) {
-    if ((!unlink('uploads/' . $id)) and file_exists('uploads/' . $id)) {
+    if ((!unlink(dirname(__FILE__) . '/uploads/' . $id)) and file_exists(dirname(__FILE__) . '/uploads/' . $id)) {
         return false;
     }
     $stmt = $dbh->prepare('DELETE FROM images WHERE id = ?');
